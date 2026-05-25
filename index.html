@@ -1,224 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="css/style.css" />
-
-    <title>Social Media Dashboard</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Social Media Dashboard</title>
 </head>
 
 <body>
 
-    <main class="container">
+<main class="container">
 
-        <div class="row">
+  <!-- HEADER -->
+  <div class="row">
 
-            <div class="title">
-                <h1>Social Media Dashboard</h1>
-                <p class="total-followers">
-                    Total Followers: 23,004
-                </p>
-            </div>
+    <div class="title">
+      <h1>Social Media Dashboard</h1>
+      <p class="total-followers">Total Followers: 23,004</p>
+    </div>
 
-            <div class="switch-mode">
-                <p>Dark Mode</p>
+    <div class="switch-mode">
+      <p>Dark Mode</p>
+      <div class="switch">
+        <div class="toggle"></div>
+      </div>
+    </div>
 
-                <div class="switch">
-                    <div class="toggle"></div>
-                    <p class="switch-on"></p>
-                </div>
-            </div>
+  </div>
 
-        </div>
+  <!-- SOCIAL CARDS -->
+  <div class="social-pages">
 
-        <div class="social-pages">
+    <!-- Facebook -->
+    <div class="card facebook">
+      <div class="card-header">
+        <img src="images/icon-facebook.svg" />
+        <p id="user-face">@nathanf</p>
+      </div>
 
-            <!-- Facebook -->
-            <div class="card facebook">
+      <div class="card-body">
+        <h1 id="follower-face">0</h1>
+        <p>Followers</p>
+      </div>
 
-                <div class="card-header">
-                    <img src="images/icon-facebook.svg" alt="Facebook Icon" />
-                    <p id="user-face">@nathanf</p>
-                </div>
+      <div class="card-footer">
+        <img src="images/icon-up.svg" />
+        <p class="facebook-flow">0</p>
+      </div>
+    </div>
 
-                <div class="card-body">
-                    <h1 id="follower-face">1987</h1>
-                    <p>Followers</p>
-                </div>
+    <!-- Twitter -->
+    <div class="card twitter">
+      <div class="card-header">
+        <img src="images/icon-twitter.svg" />
+        <p id="user-twitter">@nathanf</p>
+      </div>
 
-                <div class="card-footer">
-                    <img src="images/icon-up.svg" alt="Up Icon" />
-                    <p>12 Today</p>
-                </div>
+      <div class="card-body">
+        <h1 id="follower-twitter">0</h1>
+        <p>Followers</p>
+      </div>
 
-            </div>
+      <div class="card-footer">
+        <img src="images/icon-up.svg" />
+        <p class="twitter-flow">0</p>
+      </div>
+    </div>
 
-            <!-- Twitter -->
-            <div class="card twitter">
+    <!-- Instagram -->
+    <div class="card instagram">
+      <div class="card-header">
+        <img src="images/icon-instagram.svg" />
+        <p id="user-instagram">@realnathanf</p>
+      </div>
 
-                <div class="card-header">
-                    <img src="images/icon-twitter.svg" alt="Twitter Icon" />
-                    <p id="user-twitter">@nathanf</p>
-                </div>
+      <div class="card-body">
+        <h1 id="follower-instagram">0</h1>
+        <p>Followers</p>
+      </div>
 
-                <div class="card-body">
-                    <h1 id="follower-twitter">1044</h1>
-                    <p>Followers</p>
-                </div>
+      <div class="card-footer">
+        <img src="images/icon-up.svg" />
+        <p class="instagram-flow">0</p>
+      </div>
+    </div>
 
-                <div class="card-footer">
-                    <img src="images/icon-up.svg" alt="Up Icon" />
-                    <p>99 Today</p>
-                </div>
+    <!-- YouTube -->
+    <div class="card youtube">
+      <div class="card-header">
+        <img src="images/icon-youtube.svg" />
+        <p id="user-youtube">Nathan F.</p>
+      </div>
 
-            </div>
+      <div class="card-body">
+        <h1 id="follower-youtube">0</h1>
+        <p>Subscribers</p>
+      </div>
 
-            <!-- Instagram -->
-            <div class="card instagram">
+      <div class="card-footer">
+        <img src="images/icon-down.svg" />
+        <p class="youtube-flow">0</p>
+      </div>
+    </div>
 
-                <div class="card-header">
-                    <img src="images/icon-instagram.svg" alt="Instagram Icon" />
-                    <p id="user-instagram">@realnathanf</p>
-                </div>
+  </div>
 
-                <div class="card-body">
-                    <h1 id="follower-instagram">11k</h1>
-                    <p>Followers</p>
-                </div>
-
-                <div class="card-footer">
-                    <img src="images/icon-up.svg" alt="Up Icon" />
-                    <p>1099 Today</p>
-                </div>
-
-            </div>
-
-            <!-- YouTube -->
-            <div class="card youtube">
-
-                <div class="card-header">
-                    <img src="images/icon-youtube.svg" alt="YouTube Icon" />
-                    <p id="user-youtube">Nathan F.</p>
-                </div>
-
-                <div class="card-body">
-                    <h1 id="follower-youtube">8239</h1>
-                    <p>Subscribers</p>
-                </div>
-
-                <div class="card-footer">
-                    <img src="images/icon-down.svg" alt="Down Icon" />
-                    <p class="youtube-flow">144 Today</p>
-                </div>
-
-            </div>
-
-        </div>
-   <div class="overview-today-page">
+  <!-- OVERVIEW -->
+  <div class="overview-today-page">
 
     <h2>Overview - Today</h2>
 
     <div class="overview-cards">
 
-        <div class="overview-card">
-            <div class="data-card">
-
-                <p>Page Views</p>
-                <p>87</p>
-            </div>
-            
-            <div class="card-footer">
-                <img src="images/icon-facebook.svg" alt="Facebook Icon" />
-                <p class="facebook-flow">3 </p>
-            </div>
+      <div class="overview-card">
+        <div class="data-card">
+          <p>Page Views</p>
+          <p>87</p>
         </div>
-
-        <div class="overview-card">
-            <div class="data-card">
-                <p>Likes</p>
-                <p>87</p>
-            </div>
-            <div class="card-footer">
-                <img src="images/icon-facebook.svg" alt="Facebook Icon" />
-                <p class="facebook-flow">3 </p>
-            </div>
+        <div class="card-footer">
+          <img src="images/icon-facebook.svg" />
+          <p class="facebook-flow">0</p>
         </div>
+      </div>
 
-        <div class="overview-card">
-            <div class="data-card">
-                <p>Views</p>
-                <p>52</p>
-            </div>  
-            <div class="card-footer">
-                <img src="images/icon-instagram.svg" alt="Instagram Icon" />
-                <p class="instagram-flow">1375 </p>
-            </div>
+      <div class="overview-card">
+        <div class="data-card">
+          <p>Likes</p>
+          <p>87</p>
         </div>
-
-        <div class="overview-card">
-            <div class="data-card">
-                <p>Likes</p>
-                <p>52</p>
-            </div>
-            <div class="card-footer">
-                <img src="images/icon-instagram.svg" alt="Instagram Icon" />
-                <p class="instagram-flow">1375 </p>
-            </div>
+        <div class="card-footer">
+          <img src="images/icon-facebook.svg" />
+          <p class="facebook-flow">0</p>
         </div>
+      </div>
 
-        <div class="overview-card">
-            <div class="data-card">
-                <p>Views</p>
-                <p>54</p>
-            </div>
-            <div class="card-footer">
-                <img src="images/icon-youtube.svg" alt="YouTube Icon" />
-                <p class="youtube-flow">144 </p>
-            </div>
+      <div class="overview-card">
+        <div class="data-card">
+          <p>Views</p>
+          <p>52</p>
         </div>
-
-        <div class="overview-card">
-            <div class="data-card">
-                <p>Profile Views</p>
-                <p>52k</p>
-            </div>
-            <div class="card-footer">
-                <img src="images/icon-youtube.svg" alt="YouTube Icon" />
-                <p class="youtube-flow">144 </p>
-            </div>
+        <div class="card-footer">
+          <img src="images/icon-instagram.svg" />
+          <p class="instagram-flow">0</p>
         </div>
+      </div>
 
-        <div class="overview-card">
-            <div class="data-card">
-                <p>Likes</p>
-                <p>54</p>
-            </div>
-            <div class="card-footer">
-                <img src="images/icon-twitter.svg" alt="Twitter Icon" />
-                <p class="twitter-flow">99 </p>
-            </div>
+      <div class="overview-card">
+        <div class="data-card">
+          <p>Likes</p>
+          <p>52</p>
         </div>
-
-        <div class="overview-card">
-            <div class="data-card">
-
-                <p>Profile Views</p>
-                <p>52k</p>
-            </div>
-            <div class="card-footer">
-                <img src="images/icon-twitter.svg" alt="Twitter Icon" />
-                <p class="twitter-flow">129</p>
-            </div>
+        <div class="card-footer">
+          <img src="images/icon-instagram.svg" />
+          <p class="instagram-flow">0</p>
         </div>
+      </div>
+
+      <div class="overview-card">
+        <div class="data-card">
+          <p>Views</p>
+          <p>54</p>
+        </div>
+        <div class="card-footer">
+          <img src="images/icon-youtube.svg" />
+          <p class="youtube-flow">0</p>
+        </div>
+      </div>
+
+      <div class="overview-card">
+        <div class="data-card">
+          <p>Profile Views</p>
+          <p>52k</p>
+        </div>
+        <div class="card-footer">
+          <img src="images/icon-youtube.svg" />
+          <p class="youtube-flow">0</p>
+        </div>
+      </div>
+
+      <div class="overview-card">
+        <div class="data-card">
+          <p>Likes</p>
+          <p>54</p>
+        </div>
+        <div class="card-footer">
+          <img src="images/icon-twitter.svg" />
+          <p class="twitter-flow">0</p>
+        </div>
+      </div>
+
+      <div class="overview-card">
+        <div class="data-card">
+          <p>Profile Views</p>
+          <p>52k</p>
+        </div>
+        <div class="card-footer">
+          <img src="images/icon-twitter.svg" />
+          <p class="twitter-flow">0</p>
+        </div>
+      </div>
 
     </div>
 
-</div>
-    </main>
+  </div>
 
-    <script src="js/main.js"></script>
+</main>
+
+<script src="js/main.js"></script>
 
 </body>
 </html>

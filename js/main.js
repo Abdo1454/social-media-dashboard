@@ -1,4 +1,4 @@
-let elements = {
+const elements = {
   facebookUser: document.getElementById("user-face"),
   twitterUser: document.getElementById("user-twitter"),
   instagramUser: document.getElementById("user-instagram"),
@@ -9,6 +9,27 @@ let elements = {
   instagramFollowers: document.getElementById("follower-instagram"),
   youtubeFollowers: document.getElementById("follower-youtube"),
 };
-fetch("https://jsonplaceholder.typicode.com/users")
+
+fetch("./data.json")
   .then(res => res.json())
-  .then(data => console.log(data));
+  .then(data => {
+
+    const platforms = ["facebook", "twitter", "instagram", "youtube"];
+
+    // Users + Followers
+    platforms.forEach(p => {
+
+      elements[`${p}User`].textContent = data[p].user;
+      elements[`${p}Followers`].textContent = data[p].total;
+
+      // Today values (overview)
+      document.querySelectorAll(`.${p}-flow`).forEach(el => {
+        el.textContent = data[p].today;
+      });
+
+    });
+
+  })
+  .catch(err => {
+    console.error("Error loading data.json:", err);
+  });
