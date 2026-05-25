@@ -1,15 +1,10 @@
-let btnMode=document.getElementById("btn-mode");
-let varMode=1;
-btnMode.addEventListener("click",()=>{
-    if(varMode==1){
-        document.body.classList.add("light-mode");
-        varMode=0;
-    }else{
-        document.body.classList.remove("light-mode");
-        varMode=1;
-    }
-})
+const switchMode = document.querySelector(".switch-mode");
+const btnMode = document.getElementById("btn-mode");
 
+switchMode.addEventListener("click", () => {
+  document.body.classList.toggle("light-mode");
+  btnMode.classList.toggle("light-modee");
+});
 
 const elements = {
   facebookUser: document.getElementById("user-face"),

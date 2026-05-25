@@ -42,19 +42,31 @@ body {
   gap: 10px;
   cursor: pointer;
 }
-
-.back-mode{
+.back-mode {
+  width: 60px;
+  height: 24px;
   background: #1db489;
-  width: 70px;
-  height: 20px;
-  border-radius: 10px;
+  border-radius: 50px;
+  position: relative;
 }
-.mode{
-font-size: 110px;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-position: relative;
-transform: translateX(-75px);
-padding-bottom: 65px;
+
+.mode {
+  width: 18px;
+  height: 18px;
+  background: white;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 3px;
+
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+
+/* Light mode */
+.mode.light-modee {
+  left: 38px;
 }
 /* الدائرة */
 
