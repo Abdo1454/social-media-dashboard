@@ -18,6 +18,7 @@
   --card-bg: #f0f2fa;
   --text: #1d2029;
   --muted: #63687e;
+  --green:#f0f2fa;
 }
 
 * {
@@ -45,7 +46,7 @@ body {
 .back-mode {
   width: 60px;
   height: 24px;
-  background: #1db489;
+  background: var(--green);
   border-radius: 50px;
   position: relative;
 }
@@ -53,7 +54,7 @@ body {
 .mode {
   width: 18px;
   height: 18px;
-  background: white;
+  background: var(--text);
   border-radius: 50%;
 
   position: absolute;
@@ -187,6 +188,9 @@ body {
 .overview-today-page {
   margin-top: 20px;
 }
+.overview-today-page h2{
+margin-left: 150px;
+}
 
 .overview-today h2 {
   margin: 20px 0px;
@@ -273,5 +277,25 @@ body {
 @media (max-width: 600px) {
   .overview-cards {
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width:391px) {
+
+  .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .total-followers{
+    text-align: center;
+  }
+  .row h1{
+    font-size: 23px;
+  }
+  .overview-today-page h2{
+    text-align: center;
+    margin-left: 0px;
+    width: 300px;
   }
 }

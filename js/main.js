@@ -17,7 +17,8 @@ const elements = {
   instagramFollowers: document.getElementById("follower-instagram"),
   youtubeFollowers: document.getElementById("follower-youtube"),
 };
-
+totalFollowers =document.querySelector(".total-followers");
+    let total = 0;
 fetch("./data.json")
   .then(res => res.json())
   .then(data => {
@@ -29,12 +30,14 @@ fetch("./data.json")
 
       elements[`${p}User`].textContent = data[p].user;
       elements[`${p}Followers`].textContent = data[p].total;
+        // total followers
+      total += data[p].total;
 
       // Today values (overview)
       document.querySelectorAll(`.${p}-flow`).forEach(el => {
         el.textContent = data[p].today;
       });
-
+ totalFollowers.textContent = `Total Followers: ${total}`;
     });
 
   })
