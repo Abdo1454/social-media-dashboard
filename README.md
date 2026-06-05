@@ -4,12 +4,7 @@
 A responsive social media dashboard built with HTML, CSS, and JavaScript.
 
 ##  Live Demo
-
-Add your live demo link here.
-
-##  Preview
-
-Add a screenshot of the project here.
+https://dashbaordsocailmedia.netlify.app/
 
 ##  Technologies Used
 
